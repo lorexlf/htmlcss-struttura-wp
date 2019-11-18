@@ -18,7 +18,7 @@ body {
 
 .container {
   width: 1280px;
-  margin: 20px auto;
+  margin: 20px auto 0px;
   border-radius: 3px 3px 0px 0px;
 }
 
@@ -113,7 +113,7 @@ ul.menu li {
   margin: 0;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.4);
-  padding: 16px 0px;
+  padding: 20px 0px;
 }
 
 ul.menu li a {
@@ -359,5 +359,30 @@ FOOTER
 footer {
   background: #fff;
   border-radius: 3px;
-  height: 200px;
+}
+
+
+.top-footer {
+  border-bottom: 1px solid #ccc;
+  padding: 32px;
+}
+
+.top-footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer .col {
+  width: 20%;
+  float: left;
+}
+
+footer .col:last-child {
+  width: 40%;
+  float: left;
+}
+
+footer h3 {
+  margin-bottom: 24px;
 }
